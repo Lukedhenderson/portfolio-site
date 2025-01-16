@@ -180,8 +180,9 @@ h2 {
 
 /* Projects Section */
 .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -193,6 +194,9 @@ h2 {
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .project-card:hover {
@@ -316,5 +320,9 @@ footer {
     
     .timeline-content {
         margin-left: 2rem;
+    }
+    
+    .project-card {
+        max-width: 90%;
     }
 }
